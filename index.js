@@ -1,12 +1,12 @@
-const factor = require("../utilities/factorial/index");
-const ratio = require("../utilities/ratio/index");
+const factor = require("../factorial/index.js");
+const ratio = require("../ratio/index.js");
 
-let a = 3;
+let a = 4;
 let b = 5;
-let c = 8;
+let c = 6;
 
-const ratioFactorial = () => {
-  return [{ ratio: ratio(2, 4), factorial: factor(4) }];
+const ratioAndFactorial = (a, b, c) => {
+  return { ratio: ratio(a, b), factorial: factor(c) };
 };
 
-module.exports = ratioFactorial;
+module.exports = ratioAndFactorial;
